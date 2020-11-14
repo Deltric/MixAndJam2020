@@ -425,6 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 672800940}
   - component: {fileID: 672800939}
+  - component: {fileID: 672800941}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -468,6 +469,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672800941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672800938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b01ea0a1c1ee8345b77c3edc43a1d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 246506531474537804, guid: d348436844d0f3646bc20f6ad33ee1ca, type: 3}
+  spawnTime: 10000
+  spawnPoints:
+  - {fileID: 333078718}
+  - {fileID: 1026764925}
+  - {fileID: 1441811181}
+  - {fileID: 1634914188}
+  - {fileID: 11895600}
+  - {fileID: 249737461}
+  - {fileID: 1003841058}
 --- !u!1 &1003841057
 GameObject:
   m_ObjectHideFlags: 0

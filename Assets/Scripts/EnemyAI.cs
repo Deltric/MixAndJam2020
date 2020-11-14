@@ -20,7 +20,6 @@ public class EnemyAI : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         direction.Normalize();
         movement = direction;
-        Debug.Log((player.position));
     }
     
     void FixedUpdate()

@@ -10,8 +10,7 @@ public class MovementScript : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 md;
 
-    void Awake()
-    {
+    void Awake() {
         speed = movespeed;
     }
     

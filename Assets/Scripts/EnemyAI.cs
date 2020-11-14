@@ -31,4 +31,12 @@ public class EnemyAI : MonoBehaviour
     {
         rb.MovePosition((Vector2)transform.position + (direction * movespeed * Time.deltaTime));
     }
+
+    void OnCollisionEnter(Collision collision) {
+        Debug.Log("hi");
+        if(collision.gameObject.tag.Equals("Player")) {
+            Physics.IgnoreLayerCollision(9, 8);
+        }
+    }
+
 }

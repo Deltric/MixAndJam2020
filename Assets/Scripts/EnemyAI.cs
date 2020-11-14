@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform player;
+    Transform player;
     private Rigidbody2D rb;
     public float movespeed = 5f;
     private Vector2 movement;
@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag ("Player").transform;
     }
 
     void Update()
